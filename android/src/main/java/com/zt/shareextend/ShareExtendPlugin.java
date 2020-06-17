@@ -30,10 +30,10 @@ public class ShareExtendPlugin implements MethodChannel.MethodCallHandler, Plugi
     private static final String CHANNEL = "com.zt.shareextend/share_extend";
 
     private final Registrar mRegistrar;
-    private List<String> list;
-    private String type;
-    private String sharePanelTitle;
-    private String subject;
+    private static List<String> list;
+    private static String type;
+    private static String sharePanelTitle;
+    private static String subject;
 
     public static void registerWith(Registrar registrar) {
         MethodChannel channel = new MethodChannel(registrar.messenger(), CHANNEL);
